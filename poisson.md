@@ -1,6 +1,6 @@
-## Functionele Werking van het Script
+## Functionele Werking van het model
 
-Dit script is ontwikkeld om uitslagen van veldhockeywedstrijden te voorspellen op basis van historische wedstrijdgegevens. Het maakt gebruik van statistische methoden en AI-concepten, zoals de Poisson-verdeling, om de kans op verschillende wedstrijduitslagen te berekenen. De gebruiker kan een CSV-bestand met historische wedstrijduitslagen invoeren, waarna het script voorspellingen genereert voor de nog niet gespeelde wedstrijden.
+Dit model is ontwikkeld om uitslagen van veldhockeywedstrijden te voorspellen op basis van historische wedstrijdgegevens. Het maakt gebruik van statistische methoden en AI-concepten, zoals de Poisson-verdeling, om de kans op verschillende wedstrijduitslagen te berekenen. De gebruiker kan een CSV-bestand met historische wedstrijduitslagen invoeren, waarna het python-script voorspellingen genereert voor de nog niet gespeelde wedstrijden.
 
 ## Implementatie van AI Concepten
 
@@ -42,7 +42,7 @@ Het `deeplearning.py` script is ontworpen om voorspellingen te genereren voor ve
 **Benodigdheden**
 
 - **Python 3.10** of hoger geïnstalleerd op je systeem.
-- **Vereiste Python-pakketten:** `pandas`, `numpy`, `scipy`, `scikit-learn`, `tensorflow`.
+- **Vereiste Python-pakketten:** `pandas`, `numpy`, `scipy`
 
 ### 2. Invoerbestand Voorbereiden
 
