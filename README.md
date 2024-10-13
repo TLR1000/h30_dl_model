@@ -12,8 +12,8 @@ Tot nu is het resultaat dat er per wedstrijd voor 1 partij maximaal 2 doelpunten
 
 Per model vind je een uitleg en een uitgebreide beschrijving, en natuurlijk de Python-code om de betreffende AI-modellen op je eigen computer te kunnen draaien. Experimenteer gerust met de code en datasets om de voorspellingen verder te verbeteren! Ik heb aangegeven per model hoe je dat kunt doen.
  
-Het Poisson-model is een goede start, is ook de basis voor bookmakers e.d. maar wordt bijv. ook in verkeersmanagement en gezondheidszorg gebruikt om workloads te voorspellen.
-
+Het Poisson-model is een goede start, is ook de basis voor bookmakers e.d. maar wordt bijv. ook in verkeersmanagement en gezondheidszorg gebruikt om workloads te voorspellen. Het deep learning model is gemaakt met TensorFlow, dat heel populair is nu. De uitgangspunten van Poisson worden gebruikt maar nu wordt de data gegenereerd aan de hand van een getraind neuraal netwerk ipv. een statistisch model. 
+ 
 [Uitleg over de implementatie van het toegepaste Poisson model](poisson.md)   
 [Uitleg over de implementatie van het toegepaste Deep Learning model](deeplearning.md)
 
