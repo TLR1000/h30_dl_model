@@ -35,8 +35,6 @@ Voorspellingen zijn gebaseerd op statistische gemiddelden en historische gegeven
 
 ## Gebruik van het Script
 
-## Gebruik van het Script
-
 Het `deeplearning.py` script is ontworpen om voorspellingen te genereren voor veldhockeywedstrijden op basis van historische data. Hieronder volgt een stapsgewijze handleiding voor het gebruik van het script.
 
 ### 1. Voorbereiding
