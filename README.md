@@ -9,7 +9,7 @@ Uitslagen van het lopende seizoen zijn voor iedere competitie op de KNHB site te
 
 # Zijn ze goed? Nee.
 Omdat de inputdatasets te beperkt van omvang zijn, zijn de resultaten discutabel. Het deep learning model is zelfs behoorlijk overkill voor deze toepassing. Op dit moment worden voor deze toepassing en deze datasets de beste resultaten behaald met het Poisson-model. 
-Tot nu is het resultaat dat er per wedstrijd voor 1 partij maximaal 2 doelpunten te weinig voorspeld worden, over het algemeen zonder het winst of verlies resultaat te beïnvloeden.
+Tot nu is het resultaat dat er per wedstrijd voor 1 partij maximaal 2 doelpunten te weinig voorspeld worden, over het algemeen zonder het winst of verlies resultaat te beïnvloeden. Voor serieuze toepassingen is dat natuurlijk gruwelijk slecht.
 Ik heb aangegeven hoe je zelf met tuning parameters de modellen nog verder kunt tunen.
  
 # Hmmm. Okay. Hoe...?
