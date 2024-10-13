@@ -11,6 +11,7 @@
 2. [Nadere Uitleg om de Output van het Script te Begrijpen](#nadere-uitleg-om-de-output-van-het-script-te-begrijpen)
 3. [Uitleg Waarom Resultaten Kunnen Afwijken](#uitleg-waarom-resultaten-kunnen-afwijken)
 4. [Gebruik van het Script](#gebruik-van-het-script)
+5. [Tunen van het model](#tunen-van-het-model)
 
 ---
 
@@ -295,4 +296,232 @@ Bijvoorbeeld:
 - Controleer de nauwkeurigheid: Vergelijk de voorspellingen met daadwerkelijke uitslagen om de prestaties van het model te evalueren.  
 - Iteratieve Verbetering: Pas het model aan op basis van de resultaten en probeer het opnieuw met verbeterde data of modelparameters.  
 
+---
 
+## Tunen van het model
+
+## Tuning: Het Model vs. Het Script
+
+In de context van het `deeplearning.py` script voor het voorspellen van competitie-uitkomsten, is het belangrijk om onderscheid te maken tussen het **tunen van het model** en het **tunen van het script** zelf.
+
+### 1. Tunen van het Model
+
+**Wat is het?**
+
+- Het aanpassen van de hyperparameters en architectuur van het neurale netwerk om de prestaties van het voorspellingsmodel te optimaliseren.
+
+**Belangrijke Hyperparameters:**
+
+- **Aantal Lagen en Neuronen:** Bepalen de diepte en capaciteit van het netwerk.
+- **Leerpercentage (Learning Rate):** Bepaalt hoe snel het model leert.
+- **Batchgrootte:** Aantal voorbeelden dat het model tegelijkertijd verwerkt.
+- **Aantal Epochs:** Hoeveel keer het model de gehele trainingsdataset doorloopt.
+- **Regularisatieparameters:** Zoals dropout rates en L1/L2 regularisatie om overfitting te voorkomen.
+- **Activatiefuncties:** Kiezen tussen functies zoals ReLU, Sigmoid, Tanh voor neuronen.
+
+**Hoe aan te passen?**
+
+- **Model Architectuur:** Voeg meer lagen of neuronen toe/verwijder ze om de complexiteit van het model te verhogen/verlagen.
+- **Hyperparameter Optimalisatie:** Gebruik technieken zoals Grid Search, Random Search, of Bayesian Optimization om de beste combinatie van hyperparameters te vinden.
+- **Regularisatie:** Pas dropout rates of regularisatievoorwaarden aan om overfitting te verminderen.
+
+**Effect:**
+
+- **Betere Prestaties:** Een goed getuned model kan nauwkeurigere voorspellingen doen.
+- **Generalizatie:** Vermindert overfitting, waardoor het model beter presteert op nieuwe, ongeziene data.
+- **Trainingssnelheid:** Optimalisatie van leerpercentage en batchgrootte kan de trainingstijd verkorten.
+
+### 2. Tunen van het Script
+
+**Wat is het?**
+
+- Het verbeteren van de efficiëntie, leesbaarheid, en functionaliteit van het Python script zelf.
+
+**Belangrijke Aspecten:**
+
+- **Code Optimalisatie:** Verminderen van runtime door efficiëntere algoritmen of datastructuren te gebruiken.
+- **Modularisatie:** Het opdelen van het script in herbruikbare functies of modules voor betere onderhoudbaarheid.
+- **Logging en Debugging:** Toevoegen van gedetailleerde logging om de voortgang en fouten tijdens uitvoering te monitoren.
+- **Gebruik van Configuratiebestanden:** Separeren van parameters en instellingen van de code zelf voor makkelijker aanpassingen.
+- **Error Handling:** Verbeteren van foutafhandeling om robuustheid te vergroten.
+
+**Hoe aan te passen?**
+
+- **Refactoring:** Herstructureer de code om deze efficiënter en leesbaarder te maken.
+- **Implementeren van Logging:** Gebruik de `logging` module in Python om belangrijke gebeurtenissen vast te leggen.
+- **Configuratiebestanden:** Gebruik bijvoorbeeld `config.yaml` of `config.json` om parameters op te slaan en deze in het script te laden.
+- **Optimalisatie:** Profiler de code om knelpunten te identificeren en optimaliseer deze delen.
+
+**Effect:**
+
+- **Efficiëntie:** Snellere uitvoeringstijden en lager geheugenverbruik.
+- **Onderhoudbaarheid:** Gemakkelijker om de code te begrijpen, aanpassen en uitbreiden.
+- **Robuustheid:** Minder kans op crashes en fouten tijdens uitvoering.
+
+### Samenvatting
+
+- **Model Tuning:** Richt zich op het optimaliseren van de machine learning component van het script om nauwkeurigere en beter generaliserende voorspellingen te maken.
+- **Script Tuning:** Richt zich op het verbeteren van de Python code zelf voor betere efficiëntie, leesbaarheid en onderhoudbaarheid.
+
+In de meeste gevallen, vooral als je de voorspellende prestaties wilt verbeteren, is het **tunen van het model** het meest impactvol. Echter, voor een soepelere en efficiëntere werking van het script, kan het **tunen van het script** ook nuttig zijn.
+
+### Aanbevelingen
+
+1. **Focus op Model Tuning:**
+   - Begin met het optimaliseren van de hyperparameters van je neurale netwerk. Experimenteer met verschillende architecturen, leerpercentages en regularisatietechnieken.
+
+2. **Verbeter het Script:**
+   - Terwijl je aan model tuning werkt, zorg ervoor dat je script efficiënt en goed gestructureerd is. Voeg logging toe en gebruik configuratiebestanden om het beheer te vergemakkelijken.
+
+3. **Gebruik Automatiseringstools:**
+   - Maak gebruik van hyperparameter tuning tools zoals **Keras Tuner**, **Optuna**, of **Hyperopt** om het proces te stroomlijnen.
+
+4. **Monitor en Evalueer:**
+   - Houd de prestaties van zowel het model als het script in de gaten. Gebruik validatie data om de effectiviteit van de aanpassingen te beoordelen.
+
+Door zowel het model als het script te tunen, kun je een krachtiger en efficiënter voorspellingssysteem creëren voor veldhockeywedstrijden.
+
+## Tuning van het Model
+
+Het tunen van het model is een cruciaal onderdeel om de prestaties van je voorspellingsmodel te optimaliseren. Door de juiste hyperparameters aan te passen, kun je het model efficiënter maken en nauwkeurigere voorspellingen realiseren. Hieronder volgt een samenvatting van model tuning en aanwijzingen waar je deze aanpassingen kunt doorvoeren in de `deeplearning.py` script.
+
+### Samenvatting van Model Tuning
+
+**Model tuning** omvat het proces van het aanpassen van de hyperparameters en de architectuur van je neurale netwerk om de nauwkeurigheid en generalisatie van het model te verbeteren. Enkele belangrijke hyperparameters die je kunt tunen zijn:
+
+1. **Aantal Lagen en Neuronen:**
+   - Meer lagen en neuronen kunnen het model krachtiger maken, maar verhogen ook het risico op overfitting.
+   
+2. **Leerpercentage (Learning Rate):**
+   - Het leerpercentage bepaalt hoe groot de stappen zijn die het model neemt tijdens het optimaliseren. Een te hoog leerpercentage kan leiden tot instabiliteit, terwijl een te laag leerpercentage de training kan vertragen.
+
+3. **Batchgrootte:**
+   - De batchgrootte bepaalt het aantal voorbeelden dat het model tegelijkertijd verwerkt tijdens training. Grotere batches kunnen de training versnellen, maar vereisen meer geheugen.
+
+4. **Aantal Epochs:**
+   - Het aantal epochs bepaalt hoe vaak het model de gehele trainingsdataset doorloopt tijdens training. Meer epochs kunnen leiden tot betere prestaties, maar ook tot overfitting.
+
+5. **Regularisatieparameters:**
+   - Dropout rates en L1/L2 regularisatie helpen overfitting te voorkomen door neuronen willekeurig uit te schakelen of gewichten te beperken.
+
+6. **Activatiefuncties:**
+   - Het kiezen van de juiste activatiefuncties zoals ReLU, Sigmoid, of Tanh kan de leercapaciteit van het model beïnvloeden.
+
+### Waar in het Script Kun Je Model Tuning Aanpassen?
+
+Hieronder worden de locaties in het `deeplearning.py` script aangegeven waar je de bovenstaande hyperparameters kunt aanpassen:
+
+#### 1. Aantal Lagen en Neuronen
+
+Je kunt het aantal lagen en neuronen in je model aanpassen in de sectie waar het model wordt gedefinieerd. Bijvoorbeeld:
+
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+
+model = Sequential()
+model.add(Dense(128, activation='relu', input_dim=input_dim))
+model.add(Dropout(0.3))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.3))
+# Voeg meer lagen toe of pas het aantal neuronen aan
+model.add(Dense(32, activation='relu'))
+model.add(Dropout(0.3))
+model.add(Dense(2, activation='linear'))  # Output lagen
+```
+
+# Aanpassing
+
+1. **Aantal Lagen**  
+   Voeg extra Dense en Dropout lagen toe of verwijder bestaande lagen.
+
+2. **Aantal Neuronen**  
+   Verander het eerste argument van de Dense lagen (bijvoorbeeld van 128 naar 256).
+
+3. **Leerpercentage (Learning Rate)**  
+   Het leerpercentage kan worden aangepast in de optimizer configuratie:
+
+from tensorflow.keras.optimizers import Adam
+
+```python
+optimizer = Adam(learning_rate=0.001)  # Pas de learning rate aan
+model.compile(optimizer=optimizer, loss='mse')
+```
+
+# Aanpassing
+
+1. **Aantal Lagen**  
+   Voeg extra Dense en Dropout lagen toe of verwijder bestaande lagen.
+
+2. **Aantal Neuronen**  
+   Verander het eerste argument van de Dense lagen (bijvoorbeeld van 128 naar 256).
+
+3. **Leerpercentage (Learning Rate)**  
+   Verander de waarde van `learning_rate` (bijvoorbeeld naar 0.0001 of 0.01).
+
+4. **Batchgrootte**  
+   De batchgrootte kan worden aangepast bij het aanroepen van `model.fit`:
+
+```python
+model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)
+```
+
+# Aanpassing
+
+1. **Aantal Lagen**  
+   Voeg extra Dense en Dropout lagen toe of verwijder bestaande lagen.
+
+2. **Aantal Neuronen**  
+   Verander het eerste argument van de Dense lagen (bijvoorbeeld van 128 naar 256).
+
+3. **Leerpercentage (Learning Rate)**  
+   Verander de waarde van `learning_rate` (bijvoorbeeld naar 0.0001 of 0.01).
+
+4. **Batchgrootte**  
+   Verander de waarde van `batch_size` (bijvoorbeeld naar 16 of 64). De batchgrootte kan worden aangepast bij het aanroepen van `model.fit`:
+
+5. **Aantal Epochs**  
+   Ook hier kun je het aantal epochs aanpassen bij `model.fit`
+   
+```python
+model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)
+```
+
+4. **Aantal Epochs**  
+   Verander de waarde van `epochs` (bijvoorbeeld naar 150 of 300).
+
+5. **Regularisatieparameters**  
+   Pas de dropout rates en regularisatie toe in de modelarchitectuur:
+
+```python
+model.add(Dropout(0.5))  # Verhoog of verlaag dropout rate
+from tensorflow.keras.regularizers import l1, l2
+
+model.add(Dense(128, activation='relu', kernel_regularizer=l2(0.001)))
+model.add(Dense(64, activation='relu', kernel_regularizer=l1(0.001)))
+```
+
+# Aanpassing
+
+1. **Dropout Rate**  
+   Verander de waarde van de `rate` parameter in Dropout lagen.
+
+2. **L1/L2 Regularisatie**  
+   Voeg `kernel_regularizer` toe aan Dense lagen en pas de regularisatiewaarden aan.
+
+3. **Activatiefuncties**  
+   Kies verschillende activatiefuncties in de Dense lagen:
+
+```python
+model.add(Dense(128, activation='tanh'))  # Wijzig naar Tanh
+model.add(Dense(64, activation='sigmoid'))  # Wijzig naar Sigmoid
+```
+
+# Aanpassing
+
+6. **Activatiefuncties**  
+   Verander de waarde van de `activation` parameter naar een andere functie zoals `tanh` of `sigmoid`.
+
+# Conclusie
+
+Het tunen van het model is essentieel om de voorspellende prestaties van je `deeplearning.py` script te optimaliseren. Door systematisch de hyperparameters en de architectuur van het neurale netwerk aan te passen, kun je de nauwkeurigheid en generalisatie van je model verbeteren. Gebruik technieken zoals Grid Search, Random Search of Bayesian Optimization om de optimale combinatie van hyperparameters te vinden.
