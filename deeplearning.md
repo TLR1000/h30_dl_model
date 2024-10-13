@@ -1,4 +1,4 @@
-## VetA competitieuitslagen te voorspellen met Deep Learning
+## VetA competitieuitslagen voorspellen met Deep Learning
 
 **Disclaimer:** Dit script is ontwikkeld om wedstrijduitslagen te voorspellen, gewoon omdat het kan. Het is een voorbeeld van een implementatie van een deep learning concept. De trainingsdataset is over het algemeen te klein om zinvolle resultaten te verwachten. De resultaten zijn kwalitatief onvoldoende voor serieuze toepassingen en dus vooral grappig. Ga er dus met de nodige voorzichtigheid mee om.
 
