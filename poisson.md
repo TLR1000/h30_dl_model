@@ -35,7 +35,41 @@ Voorspellingen zijn gebaseerd op statistische gemiddelden en historische gegeven
 
 ## Gebruik van het Script
 
-Het script kan worden gebruikt door analisten, coaches, of liefhebbers die inzicht willen krijgen in de verwachte uitslagen van veldhockeywedstrijden. Door historische gegevens in te voeren, kan men voorspellingen krijgen voor toekomstige wedstrijden. Dit kan bijvoorbeeld nuttig zijn voor het maken van strategieën of voor het verkennen van verschillende scenario's.
+## Gebruik van het Script
+
+Het `deeplearning.py` script is ontworpen om voorspellingen te genereren voor veldhockeywedstrijden op basis van historische data. Hieronder volgt een stapsgewijze handleiding voor het gebruik van het script.
+
+### 1. Voorbereiding
+
+**Benodigdheden**
+
+- **Python 3.10** of hoger geïnstalleerd op je systeem.
+- **Vereiste Python-pakketten:** `pandas`, `numpy`, `scipy`, `scikit-learn`, `tensorflow`.
+
+### 2. Invoerbestand Voorbereiden
+
+Zorg ervoor dat je een invoerbestand hebt met historische wedstrijduitslagen. Het bestand moet de volgende kolommen bevatten:
+
+- `HomeTeam`: Naam van het thuisteam.
+- `AwayTeam`: Naam van het uitteam.
+- `HomeGoals`: Aantal doelpunten gescoord door het thuisteam.
+- `AwayGoals`: Aantal doelpunten gescoord door het uitteam.
+
+Het script zal op basis van de input ook bepalen welke wedstrijden er nog gespeeld moeten worden. 
+
+**Voorbeeld van `uitslagen_h30.txt`:**
+
+```csv
+HomeTeam,AwayTeam,HomeGoals,AwayGoals
+TeamA,TeamB,2,1
+TeamC,TeamD,0,3
+TeamA,TeamC,1,1
+etc.
+```
+         
+### 3. Uitvoeren van het script
+
+Run poisson.bat nadat je de namen van de invoer en uitvoerbestanden aangepast hebt naar je wensen.
 
 ## Tunen van het Model
 
