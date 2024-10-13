@@ -1,5 +1,5 @@
 # VetA Voorspellingen
-In deze GitHub repository vind je code en een beschrijving om zelf met behulp van AI de uitslagen van VetA-wedstrijden te voorspellen. Er zijn twee varianten beschikbaar: een Poisson-model en een uitgebreider deep learning model. Deze implementaties zijn bedoeld als voorbeeld voor werkende AI modellen.
+In deze GitHub repository vind je code en een beschrijving om zelf met behulp van AI de uitslagen van VetA-wedstrijden te voorspellen. Er zijn twee varianten beschikbaar: een Poisson-model en een Deep Learning model. Ze zijn bedoeld als voorbeeld voor werkende AI modellen voor alledaagse zaken.
 
 # Kan ik ook ...?
 De modellen zijn universeel toepasbaar op een KNHB competitie. Ze worden gevoed met de uitslagen van alle tot nu toe in een competitie gespeelde wedstrijden. 
