@@ -2,6 +2,8 @@
 
 Dit model is ontwikkeld om uitslagen van veldhockeywedstrijden te voorspellen op basis van historische wedstrijdgegevens. Het maakt gebruik van statistische methoden en AI-concepten, zoals de Poisson-verdeling, om de kans op verschillende wedstrijduitslagen te berekenen. De gebruiker kan een CSV-bestand met historische wedstrijduitslagen invoeren, waarna het python-script voorspellingen genereert voor de nog niet gespeelde wedstrijden.
 
+**Disclaimer:** Dit script is ontwikkeld om wedstrijduitslagen te voorspellen, gewoon omdat het kan. Het is een voorbeeld van een implementatie van een eenvoudig AI concept. De dataset is over het algemeen te klein om zinvolle resultaten te verwachten. De resultaten zijn kwalitatief onvoldoende voor serieuze toepassingen en dus vooral grappig. Ga er dus met de nodige voorzichtigheid mee om.
+
 ## Implementatie van AI Concepten
 
 Het script implementeert een eenvoudige vorm van AI, namelijk voorspellende modellering met behulp van statistiek. De **Poisson-verdeling** wordt gebruikt om het aantal gescoorde doelpunten te voorspellen, waarbij rekening wordt gehouden met de aanvalskracht en verdedigingssterkte van de teams. Hoewel het geen complexe machine learning gebruikt, wordt toch een vorm van voorspellende analyse toegepast om resultaten te genereren op basis van bestaande data.
