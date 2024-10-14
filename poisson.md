@@ -70,7 +70,7 @@ etc.
 ### 3. Uitvoeren van het script
 
 Op een windows machine:   
-Run poisson.bat nadat je de namen van de invoer en uitvoerbestanden aangepast hebt naar je wensen.   
+Run poisson.bat nadat je de namen van de invoer en uitvoerbestanden aangepast hebt in poisson.bat naar je wensen.   
 Voor andere OS'sen neem ik aan dat je zelf wel weet hoe en wat.   
  
 ## Tunen van het Model
