@@ -254,7 +254,7 @@ De resultaten van het `deeplearning.py` script kunnen afwijken van de werkelijke
 
 ## Gebruik van het Script
 
-Het `deeplearning.py` script is ontworpen om voorspellingen te genereren voor veldhockeywedstrijden op basis van historische data. Hieronder volgt een stapsgewijze handleiding voor het gebruik van het script.
+Stapsgewijze handleiding voor het gebruik van het script:
 
 ### 1. Voorbereiding
 
@@ -286,7 +286,7 @@ etc.
          
 ### 3. Uitvoeren van het script
 
-Run deeplearning.bat nadat je de namen van de invoer en uitvoerbestanden aangepast hebt naar je wensen.
+Run deeplearning.bat nadat je de namen van de invoer en uitvoerbestanden in deeplearning.bat hebt aangepast hebt naar je wensen.
 
 ### 4. Analyseren van de Uitvoer
 Na het uitvoeren van het script, genereert het een CSV-bestand met voorspellingen. Gebruik een spreadsheetprogramma om de resultaten te analyseren en inzicht te krijgen in de voorspellingen.
@@ -522,6 +522,6 @@ model.add(Dense(64, activation='sigmoid'))  # Wijzig naar Sigmoid
 6. **Activatiefuncties**  
    Verander de waarde van de `activation` parameter naar een andere functie zoals `tanh` of `sigmoid`.
 
-# Conclusie
+# Tenslotte
 
-Het tunen van het model is essentieel om de voorspellende prestaties van je `deeplearning.py` script te optimaliseren. Door systematisch de hyperparameters en de architectuur van het neurale netwerk aan te passen, kun je de nauwkeurigheid en generalisatie van je model verbeteren. Gebruik technieken zoals Grid Search, Random Search of Bayesian Optimization om de optimale combinatie van hyperparameters te vinden.
+Het tunen van het model is essentieel om de voorspellende prestaties van je `deeplearning.py` script te optimaliseren. Door systematisch de hyperparameters en de architectuur van het neurale netwerk aan te passen, kun je de nauwkeurigheid en generalisatie van je model verbeteren. Je zou technieken zoals Grid Search, Random Search of Bayesian Optimization kunnen gebruiken om de optimale combinatie van hyperparameters te vinden.
