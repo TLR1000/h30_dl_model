@@ -4,7 +4,7 @@ Dit model is ontwikkeld om uitslagen van veldhockeywedstrijden te voorspellen op
 
 ## Implementatie van AI Concepten
 
-Het script maakt gebruik van een eenvoudige vorm van AI, namelijk voorspellende modellering met behulp van statistiek. De **Poisson-verdeling** wordt gebruikt om het aantal gescoorde doelpunten te voorspellen, waarbij rekening wordt gehouden met de aanvalskracht en verdedigingssterkte van de teams. Hoewel het geen complexe machine learning gebruikt, wordt toch een vorm van voorspellende analyse toegepast om resultaten te genereren op basis van bestaande data.
+Het script implementeert een eenvoudige vorm van AI, namelijk voorspellende modellering met behulp van statistiek. De **Poisson-verdeling** wordt gebruikt om het aantal gescoorde doelpunten te voorspellen, waarbij rekening wordt gehouden met de aanvalskracht en verdedigingssterkte van de teams. Hoewel het geen complexe machine learning gebruikt, wordt toch een vorm van voorspellende analyse toegepast om resultaten te genereren op basis van bestaande data.
 
 ## Uitgevoerde Analyses
 
@@ -35,7 +35,7 @@ Voorspellingen zijn gebaseerd op statistische gemiddelden en historische gegeven
 
 ## Gebruik van het Script
 
-Het `deeplearning.py` script is ontworpen om voorspellingen te genereren voor veldhockeywedstrijden op basis van historische data. Hieronder volgt een stapsgewijze handleiding voor het gebruik van het script.
+Het `poisson.py` script is ontworpen om voorspellingen te genereren voor veldhockeywedstrijden op basis van historische data. Hieronder volgt een stapsgewijze handleiding voor het gebruik van het script.
 
 ### 1. Voorbereiding
 
@@ -67,8 +67,10 @@ etc.
          
 ### 3. Uitvoeren van het script
 
-Run poisson.bat nadat je de namen van de invoer en uitvoerbestanden aangepast hebt naar je wensen.
-
+Op een windows machine:   
+Run poisson.bat nadat je de namen van de invoer en uitvoerbestanden aangepast hebt naar je wensen.   
+Voor andere OS'sen neem ik aan dat je zelf wel weet hoe en wat.   
+ 
 ## Tunen van het Model
 
 Het model kan verder getuned worden om de nauwkeurigheid van de voorspellingen te verbeteren:
